@@ -459,7 +459,7 @@ public class AntForestV2 extends ModelTask {
                     }
                     if (waterCount > 3)
                         waterCount = 3;
-                    if (Status.canWaterFriendToday(uid, waterCount)) {
+                    /*if (Status.canWaterFriendToday(uid, waterCount)) {
                         try {
                             String s = AntForestRpcCall.queryFriendHomePage(uid);
                             TimeUtil.sleep(100);
@@ -482,7 +482,7 @@ public class AntForestV2 extends ModelTask {
                             Log.i(TAG, "waterFriendEnergy err:");
                             Log.printStackTrace(TAG, t);
                         }
-                    }
+                    }*/
                 }
                 Set<String> set = whoYouWantToGiveTo.getValue();
                 if (!set.isEmpty()) {
